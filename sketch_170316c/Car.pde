@@ -22,6 +22,25 @@ class Car {
  }
  void fast(){
    x += fast;
+   if (x >= 405 + w){
+     x = -w;
+   }
+   else if (x <= -5 - w){
+     x = 400 + w;
+   
+   }
+   
  }
- 
+ int getX(){
+     return x;
+   }
+   
+ int getY(){
+     return y;
+   }
+   
+ int getSize(){
+   return w;
+ }
 }
+
